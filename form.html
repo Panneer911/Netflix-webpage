@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<div class="divlogo">
+    <img src="">
+</div>
+<body>
+    <div class="signin-container">
+        <div class="signin-box">
+            <h1>Sign In</h1>
+            <form id="signin-form">
+                <div class="input-group">
+                    <input type="text" id="email" placeholder="Email or mobile number" required>
+                    <span id="email-error">Please enter a valid email address or phone number.</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" id="signin-btn">Sign In</button>
+                <div class="alternative-signin">
+                    <p>OR</p>
+                    <button type="button" id="signin-code-btn">Use a sign-in code</button>
+                </div>
+                <div class="extras">
+                    <a href="#" id="forgot-password">Forgot password?</a>
+                    <label>
+                        <input type="checkbox" id="remember-me">
+                        Remember me
+                    </label>
+                </div>
+                <div class="signup-link">
+                    <p>New to Netflix? <a href="#">Sign up now.</a></p>
+                </div>
+            </form>
+            <p class="captcha-note">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+        </div>
+    </div>
+
+    <script>
+         // Handle form submission
+        document.getElementById('signin-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the input values
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            // Hardcoded credentials
+            let correctEmail = "spaneer927@gmail.com";
+            let correctPassword = "admin@123";
+
+            // Check if credentials match
+            if (email === correctEmail && password === correctPassword) {
+                alert("Login successful!");
+                window.location.href = "https://www.netflix.com/in/"; // Redirect to homepage (you need to create homepage.html)
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        });
+
+        // Handle "Use a sign-in code" button (if needed)
+        document.getElementById('signin-code-btn').addEventListener('click', function() {
+            alert("Sign-in code feature coming soon!");
+        });
+
+        // Handle "Forgot password" link
+        document.getElementById('forgot-password').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            let email = prompt("Please enter your email to reset the password:");
+            if (email) {
+                alert("A reset link has been sent to your email.");
+            }
+        });
+    </script>
+</body>
+</html>

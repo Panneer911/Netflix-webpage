@@ -1,0 +1,198 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Netflix background */
+    background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Logo alignment */
+.divlogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Container for Sign-In */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Box Styling for Sign-In */
+.signin-box {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+}
+
+#email-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+#signin-btn, #signin-code-btn {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signin-code-btn {
+    background-color: #333;
+    margin-top: 10px;
+}
+
+/* Alternative Sign-In */
+.alternative-signin p {
+    margin: 10px 0;
+    color: #999;
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.extras a {
+    color: #999;
+    text-decoration: none;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.captcha-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Centering Carousel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Dark background similar to Netflix */
+    color: #fff; /* White text for visibility */
+margin-right:33%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px; /* Limit width for a centered look */
+    margin: 20px 0;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    text-align: left;
+    margin: 0 10px; /* Adjusts space between columns */
+}
+
+.footer-column a {
+    text-decoration: none;
+    margin: 5px 0;
+    color: #fff;
+    padding-left: 70px; /* Indent each link for alignment */
+    transition: color 0.3s; /* Smooth transition on hover */
+    font-size: 15px;
+}
+
+.footer-column a:hover {
+    color: #b3b3b3; /* Lighten color on hover */
+}
+
+.footer-language {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 70%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+.footer-container h1{
+   font-size: 17px;
+   margin-right: 50%;
+}
+.footer-container h3{
+    font-size: 17px;
+    margin-right: 70%;
+ }

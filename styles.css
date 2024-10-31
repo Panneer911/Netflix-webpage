@@ -1,0 +1,237 @@
+/* General */
+body {
+    background-color: #141414;
+    background-image: url(https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+    font-family: Arial, sans-serif;
+    color: rgb(202, 41, 41);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+}
+
+.language-selector {
+    margin-right: 15px;
+}
+
+.btn-danger {
+    background-color: #e50914;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+/* Banner Section */
+.banner {
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.email-form input {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Trending Section */
+.trending h2 {
+    font-size: 2rem;
+}
+
+.trending-carousel .col-md-2 {
+    padding: 10px;
+}
+
+.trending-carousel img {
+    border-radius: 5px;
+}
+
+/* More Reasons to Join Section */
+.reasons-to-join {
+    background-color: #0a0a0a;
+}
+
+.reason-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.reason-card h4 {
+    font-size: 1.25rem;
+}
+
+.reason-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.movie-card {
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+.text-white h3{
+     margin-left: 70px;
+}
+
+.faq-container {
+    max-width:7000px;
+    margin: auto;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.faq {
+    background-color: #181717;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+
+.faq-question {
+    background-color: #181717;
+    color: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #444;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+/* Banner Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+    background-color: #000; /* Adjust background color */
+    color: #fff; /* Text color */
+}
+
+.signin-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Dark background similar to Netflix */
+    color: #fff; /* White text for visibility */
+margin-right:33%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px; /* Limit width for a centered look */
+    margin: 20px 0;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    text-align: left;
+    margin: 0 10px; /* Adjusts space between columns */
+}
+
+.footer-column a {
+    text-decoration: none;
+    margin: 5px 0;
+    color: #fff;
+    padding-left: 70px; /* Indent each link for alignment */
+    transition: color 0.3s; /* Smooth transition on hover */
+    font-size: 15px;
+}
+
+.footer-column a:hover {
+    color: #b3b3b3; /* Lighten color on hover */
+}
+
+.footer-language {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 70%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+.footer-container h1{
+   font-size: 17px;
+   margin-right: 50%;
+}
+.footer-container h3{
+    font-size: 17px;
+    margin-right: 70%;
+ }
